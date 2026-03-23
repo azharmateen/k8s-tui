@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "k8s-tui"
+version = "1.0.0"
+description = "Beautiful Kubernetes terminal UI - kubectl + Lens in your terminal"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "k8s-tui contributors"}]
+keywords = ["kubernetes", "k8s", "tui", "terminal", "kubectl", "dashboard"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "textual>=1.0",
+    "pyyaml>=6.0",
+    "click>=8.1",
+    "rich>=13.0",
+]
+
+[project.scripts]
+k8s-tui = "k8s_tui.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["k8s_tui*"]
