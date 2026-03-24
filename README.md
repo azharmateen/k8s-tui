@@ -1,5 +1,8 @@
 # k8s-tui
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 Beautiful Kubernetes terminal UI. kubectl + Lens in your terminal.
 
 ```bash
